@@ -1,0 +1,11 @@
+.l-inner {
+    max-width: $inner;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    margin-inline: auto;
+    @include mq(tb) {
+        max-width: 500px;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
+    }
+}

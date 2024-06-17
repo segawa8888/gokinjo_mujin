@@ -1,0 +1,78 @@
+.p-cta__inner {
+  max-width: 1144px;
+  margin-inline:auto;
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+  @include mq(tb) {
+    max-width: 500px;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}
+
+.p-cta__items {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-top: 44px;
+  @include mq(tb) {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.p-cta__btn {
+  &::before {
+    content: '';
+    border-radius: 20px;
+  }
+}
+
+.p-cta__btn a {
+  font-size: 21px;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 20px;
+  @include mq(tb) {
+    font-size: 19px;
+  }
+  span {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    @include mq(tb) {
+      font-size: 16px;
+    }
+  }
+}
+
+.p-cta__wrap {
+  margin-top: 44px;
+  max-width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  @include mq(tb) {
+    margin-top: 30px;
+    gap:10px;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cta__text {
+  font-size: 24px;
+  font-weight: $bold;
+  span {
+    font-size: 22px;
+  }
+}
+
+.p-cta__tel {
+  font-size: 40px;
+  font-weight: $bold;
+  color: $text;
+}

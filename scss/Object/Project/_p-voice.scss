@@ -1,0 +1,76 @@
+.p-voice {
+    padding-top: 199px;
+    @include mq(pc) {
+        padding-top: 10.36vw;
+        padding-bottom: 10.99vw;
+    }
+    &__title {
+        text-align: center;
+        font-size: 32px;
+        color: $main;
+        @include mq(pc) {
+            @include fz_vw(60);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+            padding-right: 5vw;
+            padding-left: 5vw;
+        }
+    }
+    &__lead {
+        margin-top: 63px;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        @include mq(pc) {
+            margin-top: 5.16vw;
+            @include fz_vw(36);
+        }
+        @include mq() {
+            @include fz_vw-sp(14);
+            padding-right: 5vw;
+            padding-left: 5vw;
+        }
+    }
+    &__wrapper {
+        margin-top: 70px;
+        @include mq(pc) {
+            margin-top: 9.17vw;
+        }
+    }
+    &__content-wrapper {
+        padding: 18px 0;
+        @include mq(pc) {
+            padding: 1.56vw 0;
+        }
+        @include mq() {
+            padding: 3vw 0;
+        }
+    }
+    &__content {
+        width: 947px;
+        padding: 69px 48px 76px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $base;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+        @include mq(pc) {
+            width: 78.1vw !important;
+            padding: 5.68vw 4vw 6.25vw;
+        }
+        @include mq() {
+            width: 80vw !important;
+            padding: 5.68vw 4vw 6.25vw;
+        }
+    }
+    &__content-title {
+        font-size: 30px;
+        text-align: center;
+        @include mq(pc) {
+            @include fz_vw(48);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+        }
+    }
+}

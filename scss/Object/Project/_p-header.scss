@@ -1,0 +1,136 @@
+.p-header {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 90px;
+}
+
+.p-header__logo {
+    max-width: 280px;
+    width: 100%;
+    @include mq(tb) {
+        max-width: 70px;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.p-header__inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    @include mq(tb) {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+.p-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    @include mq(tb) {
+        max-width: 66.4%;
+    }
+}
+
+.p-header__nav .c-btn {
+    height: 60px;
+    transition: all  0.3s ease;
+    @include mq(tb) {
+        height: 40px;
+    }
+    &:before {
+        height: 62px;
+        @include mq(tb) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        transform: translateX(0);
+        opacity: 0.7;
+        &:before {
+            transform: translateX(0); 
+        }
+    }
+
+    a {
+        font-size: 16px;
+        height: inherit;
+        flex-wrap: wrap;
+        @include mq(tb) {
+            text-align: center;
+            font-size: 11px;
+            border-radius: initial;
+            padding: 0 5px;
+        }
+
+        span {
+            display: block;
+            font-size: 14px;
+            @include mq(tb) {
+                display: none;
+            }
+        }
+    }
+}
+
+.p-header__nav .c-btn--red {
+    max-width: 348px;
+    width: 100%;
+    @include mq(tb) {
+        max-width: 50%;
+    }
+    a {
+        border: 2px solid $sub;
+        @include mq(tb) {
+            border: 2px solid $main;
+        }
+    }
+}
+
+.p-header__nav .c-btn--white {
+    max-width: 280px;
+    margin-left: 32px;
+    @include mq(tb) {
+        max-width: 50%;
+        margin-left: initial;
+    }
+
+    a {
+        @include mq(tb) {
+            border: 2px solid $main;
+        }
+    }
+}
+
+.p-header__nav .c-btn.-arrow {
+
+    &.-white {
+        &::after {
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 9px solid $base;
+        }
+    }
+
+    &.-orange {
+        &::after {
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 9px solid $main;
+        }
+    }
+}

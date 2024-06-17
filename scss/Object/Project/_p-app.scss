@@ -1,0 +1,58 @@
+.p-app__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: $bold;
+    color: $text;
+    background-color: $light-gray;
+    padding: 16px 0;
+    @include mq(tb) {
+        padding:20px 0;
+        font-size: 28px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    span {
+        color: $main;
+    }
+}
+
+.p-app__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    margin-top: 48px;
+    @include mq(tb) {
+        flex-wrap: wrap;
+        gap: 36px;
+        margin-top: 36px;
+        flex-direction: column-reverse;
+    }
+}
+
+.p-app__text {
+    font-size: 24px;
+    font-weight: $bold;
+    max-width: 674px;
+    @include mq(tb) {
+        max-width: 100%;
+        font-size: 18px;
+    }
+    span {
+        color: $main;
+    }
+}
+
+.p-app__img {
+    max-width: 243px;
+    width: 100%;
+    @include mq(tb) {
+        max-width: 119px;
+        margin-inline:auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}

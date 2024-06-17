@@ -1,0 +1,106 @@
+.p-about {
+    padding-top: 117px;
+    padding-bottom: 176px;
+    @include mq(pc) {
+        padding-top: 9.64vw;
+        padding-bottom: 14.53vw;
+    }
+    &__title {
+        text-align: center;
+        font-size: 38px;
+        line-height: 1.37;
+        @include mq(pc) {
+            @include fz_vw(60);
+        }
+        @include mq() {
+            @include fz_vw-sp(24);
+        }
+    }
+    &__sub-title {
+        margin-top: 7.24vw;
+        @include fz_vw(40);
+        text-align: center;
+        @include mq() {
+            @include fz_vw-sp(20);
+        }
+    }
+    &__content {
+        position: relative;
+        padding: 81px 90px 118px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 969px;
+        border-top: 1px solid $text;
+        @include mq(pc) {
+            padding: 6.77vw 7.5vw 9.79vw;
+            width: 80.78vw;
+        }
+        @include mq() {
+            padding: 10vw 0 12vw;
+            width: 88vw;
+        }
+        &:nth-of-type(1) {
+            margin-top: 101px;
+            @include mq(pc) {
+                margin-top: 5.26vw;
+            }
+            @include mq() {
+                margin-top: 10vw;
+            }
+        }
+    }
+
+    &__num {
+        position: absolute;
+        z-index: 2;
+        background-color: $base;
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 50%;
+        width: 103px;
+        height: 103px;
+        border-radius: 50%;
+        line-height: 103px;
+        font-size: 48px;
+        text-align: center;
+        border: 1px solid $text;
+        @include mq(pc) {
+            width: 6.61vw;
+            height: 6.61vw;
+            line-height: 6.61vw;
+            @include fz_vw(77);
+        }
+        @include mq() {
+            @include fz_vw-sp(24);
+            width: 12vw;
+            height: 12vw;
+            line-height: 12vw;
+        }
+    }
+
+    &__content-title {
+        font-size: 30px;
+        color: $main;
+        @include mq(pc) {
+            @include fz_vw(48);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+            br {
+                display: none;
+            }
+        }
+    }
+    &__text {
+        margin-top: 39px;
+        font-size: 19px;
+        @include mq(pc) {
+            margin-top: 1.31vw;
+
+            @include fz_vw(30);
+        }
+        @include mq() {
+            @include fz_vw-sp(14);
+        }
+    }
+}

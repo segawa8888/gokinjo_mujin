@@ -1,0 +1,99 @@
+.p-message__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: $bold;
+    @include mq(tb) {
+        font-size: 28px;
+    }
+    strong {
+        position: relative;
+        font-size: 32px;
+        max-width: fit-content;
+        margin-inline: auto;
+        display: block;
+        @include mq(tb) {
+            font-size: 23px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -171.25px;
+            width: 144px;
+            height: 2px;
+            background-color: $text;
+            border-radius: 28.96px;
+            @include mq(tb) {
+                width: 70px;
+                left: -94.25px;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -171.25px;
+            width: 144px;
+            height: 2px;
+            background-color: $text;
+            border-radius: 28.96px;
+            @include mq(tb) {
+                width: 70px;
+                right: -94.25px;
+            }
+        }
+    }
+
+    span {
+        font-size: 32px;
+        @include mq(tb) {
+            font-size: 24px;
+        }
+    }
+}
+
+.p-message__content {
+    margin-top: 70px;
+    display: flex;
+    @include mq(tb) {
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+}
+
+.p-message__text {
+    padding: 40px 56px;
+    background-color: $base;
+    font-size: 18px;
+    font-weight: $bold;
+    line-height: 1.5;
+    @include mq(tb) {
+        margin-top: 40px;
+        font-size: 17px;
+        padding: 40px 17.5px;
+    }
+}
+
+.p-message__wrap {
+    max-width: 280px;
+    width: 100%;
+    margin-left: 60px;
+    @include mq(tb) {
+        margin-left: initial;
+        margin-inline: auto;
+    }
+}
+
+.p-message__img img {
+    width: 100%;
+}
+
+.p-message__name {
+    font-size: 20px;
+    font-weight: $bold;
+    margin-top: 20px;
+    text-align: center;
+}
+

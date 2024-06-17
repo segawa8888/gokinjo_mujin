@@ -1,0 +1,29 @@
+.p-work__content {
+    margin-top: 70px;
+    @include mq(tb) {
+        margin-top: 30px;
+    }
+}
+
+.p-work__items {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 32px;
+    row-gap: 105px;
+    @include mq(tb) {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 16px;
+        row-gap: 20px;
+    }
+}
+
+.p-work__item-icon img {
+    width: 100%;
+}
+
+.p-work__item-title {
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: $bold;
+    text-align: center;
+}

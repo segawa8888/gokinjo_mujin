@@ -1,0 +1,18 @@
+.u-margin {
+    margin-top: 95px;
+    @include mq(pc) {
+        margin-top: 7.8vw;
+    }
+    &-s {
+        margin-top: 44px;
+        @include mq(pc) {
+            margin-top: 3.59vw;
+        }
+    }
+    &-l {
+        margin-top: 55px;
+        @include mq(pc) {
+            margin-top: 4.53vw; //87px
+        }
+    }
+}

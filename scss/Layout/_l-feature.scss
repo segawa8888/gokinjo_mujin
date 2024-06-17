@@ -1,0 +1,6 @@
+.l-feature {
+    margin-top: 143.61px;
+    @include mq(tb) {
+        margin-top: 80px;
+    }
+}

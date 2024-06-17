@@ -1,0 +1,111 @@
+.c-btn {
+    position: relative;
+    max-width: 100%;
+    max-height: 94.7px;
+    width: 100%;
+    height: 7.82vw;
+    font-weight: bold;
+    transition: transform 0.3s;
+    z-index: 2;
+    @include mq(tb) {
+        height: 90px;
+    }
+
+    &:hover {
+        transform: translateY(0.52vw);
+        &:before {
+            transform: translateY(-0.1vw);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -0.25vw;
+        left: 0;
+        width: 100%;
+        height: 7.82vw;
+        max-width: 100%;
+        max-height: 94.7px;
+        border-radius: 10px;
+        background-color: $main;
+        transition: opacity 0.1s;
+        transition: transform 0.3s;
+        @include mq(tb) {
+            height: 92px;
+            bottom: -4px;
+        }
+    }
+
+    a {
+        font-size: 25px;
+        height: 100%;
+        width: 100%;
+        border: solid 2px $main;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mq(tb) {
+            font-size: 20px;
+        }
+    }
+
+    &--red {
+        a {
+            background-color: $main;
+            border: 4px solid $base;
+            color: $sub;
+            @include mq(tb) {
+                border: 3px solid $base;
+            }
+        }
+
+        &::before {
+            opacity: 0.7;
+        }
+    }
+    &--white {
+        a {
+            background: $base;
+            color: $main;
+        }
+    }
+}
+
+.c-btn.-arrow {
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-right: 0;
+        right: 9.2%;
+        z-index: 10;
+        @include mq(tb) {
+            display: none;
+        }
+    }
+
+    &.-white {
+        &::after {
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 16px solid $base;
+        }
+    }
+
+    &.-orange {
+        &::after {
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 16px solid $main;
+        }
+    }
+}

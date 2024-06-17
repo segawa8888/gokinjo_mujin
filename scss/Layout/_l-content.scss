@@ -1,0 +1,10 @@
+.l-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    &__right {
+        margin-top: -35px;
+        width: 940px;
+    }
+}

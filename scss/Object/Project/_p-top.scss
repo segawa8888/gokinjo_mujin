@@ -1,0 +1,228 @@
+.p-top {
+    $this: &;
+    width: 100%;
+    color: $text-top;
+    &__main {
+        position: relative;
+        margin-bottom: 40px;
+        padding: 30px 0 32px;
+        background-image: url(../img/fv01.jpg);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include mq(pc) {
+            padding: 2.5vw 0 2.67vw;
+            margin-bottom: 2vw;
+        }
+        @include mq() {
+            padding: 6.9vw 0 10.67vw;
+            background-image: url(../img/fv_sp.jpg);
+
+        }
+    }
+
+    &__main-inner {
+        position: relative;
+        padding: 0 78px;
+        @include mq(pc) {
+            padding: 0 4.06vw;
+        }
+    }
+    &__title {
+        margin-top: 10px;
+        font-size: 43px;
+        letter-spacing: -0.02em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        @include mq(pc) {
+            margin-top: 0.83vw;
+            @include fz_vw(68);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+        }
+        span:nth-of-type(1) {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__strong {
+        vertical-align: middle;
+        letter-spacing: 0.02em;
+        font-size: 82px;
+        @include mq(pc) {
+            @include fz_vw(130);
+        }
+        @include mq() {
+            @include fz_vw-sp(40);
+        }
+
+        & + .c-under {
+            margin-left: 16px;
+            text-decoration: underline;
+            line-height: 2;
+            font-size: 24px;
+            @include mq(pc) {
+                margin-left: .83vw;
+                @include fz_vw(40);
+            }
+            @include mq() {
+                @include fz_vw-sp(16);
+            }
+            & + span {
+                margin-left: 16px;
+                color: #eb624d;
+                display: flex;
+                align-items: flex-end;
+                font-size: 65px;
+                line-height: 1.2;
+                @include mq(pc) {
+                    margin-left: 0.833vw;
+                    @include fz_vw(100);
+                }
+                @include mq() {
+                    @include fz_vw-sp(35);
+                }
+                span {
+                    margin-left: 8px;
+                    line-height: 65px;
+                    font-size: 24px;
+                    line-height: 2;
+                    @include mq(pc) {
+                        margin-left: 0.833vw;
+                        @include fz_vw(40);
+                    }
+                }
+            }
+        }
+
+        span {
+            margin-right: 23px;
+            font-size: 45px;
+            border-bottom: solid 5px $text;
+            @include mq(pc) {
+                @include fz_vw(72);
+                margin-right: 1.88vw;
+                border-bottom: solid 0.26vw $text;
+            }
+            @include mq() {
+                @include fz_vw-sp(20);
+            }
+        }
+        strong {
+            font-size: 82px;
+            color: $main;
+            @include mq(pc) {
+                @include fz_vw(130);
+            }
+            @include mq() {
+                @include fz_vw-sp(37);
+            }
+            span {
+                border: none;
+                margin-right: 0;
+                font-size: 164px;
+                @include mq(pc) {
+                    @include fz_vw(260);
+                }
+                @include mq() {
+                    @include fz_vw-sp(70);
+                }
+            }
+        }
+    }
+    &__row {
+        margin: 16px 0 0 120px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 30px;
+        font-weight: bold;
+        @include mq(pc) {
+            margin: 1.33vw 0 0 10vw;
+            gap: 1vw;
+            @include fz_vw(50);
+        }
+        @include mq() {
+            margin-top: 61vw;
+            flex-direction: column;
+            @include fz_vw-sp(20);
+        }
+        p {
+            margin-top: 8px;
+            text-align: center;
+            @include mq(pc) {
+                margin-top: 0.4vw;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        @include mq(pc) {
+            gap: 1vw;
+        }
+    }
+    &__item {
+        font-size: 24px;
+        @include mq(pc) {
+            @include fz_vw(44);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+        }
+        span {
+            font-size: 30px;
+            @include mq(pc) {
+                @include fz_vw(65);
+            }
+            @include mq() {
+                @include fz_vw-sp(24);
+            }
+        }
+        &:nth-of-type(1) span {
+            color: #dfc43f;
+        }
+        &:nth-of-type(2) span {
+            color: #d88833;
+        }
+        &:nth-of-type(3) span {
+            color: #d73bcc;
+        }
+        &:nth-of-type(4) span {
+            color: #6d46f7;
+        }
+    }
+    &__btn {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 24px;
+        letter-spacing: -0.02em;
+        @include mq(pc) {
+            @include fz_vw(55);
+        }
+        @include mq() {
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        @include mq() {
+            margin-top: 70vw;
+            @include fz_vw-sp(20);
+        }
+    }
+    &__pass {
+        position: absolute;
+        width: 60vw;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,9 @@
+.l-message {
+    background-color: $beige;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include mq(tb) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

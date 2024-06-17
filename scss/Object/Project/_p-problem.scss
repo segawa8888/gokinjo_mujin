@@ -1,0 +1,39 @@
+.p-problem {
+    padding-top: 181px;
+    padding-bottom: 48px;
+    background-color: $light-gray;
+    position: relative;
+    @include mq(tb) {
+        padding-top: 80px;
+        padding-bottom: 45px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        box-sizing: border-box;
+        border-right: 50vw solid transparent;
+        border-left: 50vw solid transparent;
+        border-top: 100px solid $light-gray;
+        @include mq(tb) {
+            border-top: 50px solid $light-gray; 
+        }
+    }
+}
+
+.p-problem__inner {
+    max-width: 1088px;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    margin-inline: auto;
+    @include mq(tb) {
+        padding-left: 16px;
+        padding-right: 18px;
+        max-width: 500px;
+    }
+}
+
+.p-problem__img img {
+    width: 100%;
+}

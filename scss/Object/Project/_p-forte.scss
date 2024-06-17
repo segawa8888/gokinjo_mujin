@@ -1,0 +1,102 @@
+.p-forte__content {
+    margin-top: 80px;
+    @include mq(tb) {
+        margin-top: 60px;
+    }
+}
+
+.p-forte__items {
+    display: flex;
+    @include mq(tb) {
+        display: block;
+    }
+}
+
+.p-forte__item {
+    max-width: 50%;
+    width: 100%;
+    @include mq(tb) {
+        max-width: 100%;
+    }
+}
+
+.p-forte__item:nth-child(even) {
+    margin-left: 48px;
+    @include mq(tb) {
+        margin-left: initial;
+        margin-top: 40px;
+    }
+}
+
+.p-forte__item:first-child .p-forte__item-title {
+    background-color: $main;
+}
+
+.p-forte__item:last-child .p-forte__item-title {
+    background-color: $text;
+}
+
+.p-forte__item-title {
+    padding: 46px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    color:$base;
+    text-align: center;
+    font-size: 32px;
+    @include mq(tb) {
+        padding: 40px 10px;
+        font-size: 22px;
+    }
+}
+
+.p-forte__wrap {
+    background-color: $beige;
+    padding: 68px 26px 52px 26px;
+    border-radius: 0 0 30px 30px;
+    max-height: 407px;
+    height: 100%;
+    box-shadow: 0px 14px 8px 0px rgba(0, 0, 0, 0.12);
+    @include mq(tb) {
+        padding: 40px 10px;
+    }
+}
+
+.p-forte__list {
+    position: relative;
+    font-size: 20px;
+    font-weight: $medium;
+    padding-left: 38px;
+    @include mq(tb) {
+        font-size: 17px;
+        padding-left: 31px;
+    }
+}
+
+.p-forte__list:nth-child(n+2) {
+    margin-top: 16px;
+}
+
+.p-forte__list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include mq(tb) {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.p-forte__item:first-child .p-forte__list::before {
+    background-image: url(../img/icon_check_orange.png);
+}
+
+.p-forte__item:last-child .p-forte__list::before {
+    background-image: url(../img/icon_check_black.png);
+}

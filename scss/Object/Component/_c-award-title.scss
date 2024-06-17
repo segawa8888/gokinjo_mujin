@@ -1,0 +1,46 @@
+.c-award-title {
+    text-align: center;
+    position: relative;
+    color: $main;
+    font-size: 32px;
+    font-weight: $bold;
+    max-width: fit-content;
+    margin-inline: auto;
+    @include mq(tb) {
+        font-size: 28px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -63.5px;
+        background-image: url(../img/award_left.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height:84px;
+        @include mq(tb) {
+            width: 28px;
+            height:60px;
+            left: -28px;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -63.5px;
+        background-image: url(../img/award_right.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height:84px;
+        @include mq(tb) {
+            width: 28px;
+            height:60px;
+            right: -28px;
+        }
+    }
+}

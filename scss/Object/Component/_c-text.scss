@@ -1,0 +1,33 @@
+.c-text {
+    font-size: 23px;
+    @include mq(pc) {
+        @include fz_vw(36);
+    }
+    @include mq() {
+        @include fz_vw-sp(14);
+    }
+    &--accent {
+        color: $main;
+        a {
+            color: $main;
+        }
+    }
+    &--m {
+        font-size: 38px;
+        @include mq(pc) {
+            @include fz_vw(48);
+        }
+        @include mq() {
+            @include fz_vw-sp(20);
+        }
+    }
+    &--xl {
+        font-size: 79px;
+        @include mq(pc) {
+            @include fz_vw(120);
+        }
+        @include mq() {
+            @include fz_vw-sp(40);
+        }
+    }
+}

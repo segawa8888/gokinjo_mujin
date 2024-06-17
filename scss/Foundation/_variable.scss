@@ -1,0 +1,58 @@
+// ウィンドウ幅
+// max-width
+
+$breakpoints: (
+    "sp": "screen and (max-width: 480px)",
+    "tb": "screen and (max-width: 780px)",
+    "pc": "screen and (max-width: 1200px)",
+) !default;
+
+//色
+$main: #F0523A;
+$sub: #fff;
+$back1: rgba(235, 98, 77, 0.1);
+$back2: rgba(235, 98, 77, 0.2);
+$back3: rgba(112, 112, 112, 0.05);
+$back4: rgba(235, 98, 77, 0.05);
+$back5: rgba(235, 98, 77, 0.7);
+$text-top: #3f3c3b;
+$text: #3F3C3B;
+$base: #ffff;
+$beige:#FFFAE8;
+$beige2:#FFFDF4;
+$black:#3F3C3B;
+$deep-gray:#707070;
+$light-gray:#F3F3F3;
+$light-gray2:#F8F8F8;
+$navy:#1A4A5A;
+
+// inner
+$inner:1240px;
+
+// padding
+$padding-pc:20px;
+$padding-sp:15px;
+
+// font-family
+$font-base: "Noto Sans JP", sans-serif;
+$font-accent:"Poppins", sans-serif;
+
+// font-weight
+$light:300;
+$regular:400;
+$medium:500;
+$semibold:600;
+$bold:700;
+$exbold:800;
+$black:900;
+
+// アニメーション
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+

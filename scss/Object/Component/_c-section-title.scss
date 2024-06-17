@@ -1,0 +1,67 @@
+.c-section-title {
+    font-size: 32px;
+    color: $navy;
+    font-weight: $bold;
+    text-align: center;
+    position: relative;
+    max-width: fit-content;
+    margin-inline: auto;
+    @include mq(tb) {
+        font-size: 20px;
+    }
+
+    &::before {
+        content: '';
+        width: 36px;
+        height: 66px;
+        background-image: url(../img/title_left.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left:-56px;
+        @include mq(tb) {
+            left:-35px; 
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 36px;
+        height: 66px;
+        background-image: url(../img/title_right.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right:-56px;
+        @include mq(tb) {
+            right:-35px; 
+        }
+    }
+}
+
+.c-section-title strong {
+    font-size: 48px;
+    color: $main;
+    @include mq(tb) {
+        font-size: 28px;
+    }
+}
+
+.c-section-title span {
+    color: $main;
+}
+
+.c-section-title.-md {
+    font-size: 32px;
+    @include mq(tb) {
+        font-size: 28px;
+    }
+    small {
+        font-size: 24px;
+        @include mq(tb) {
+            font-size: 20px;
+        }
+    }
+}

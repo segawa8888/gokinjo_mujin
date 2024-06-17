@@ -1,0 +1,24 @@
+.c-category {
+    display: inline-block;
+    padding: 0 13px;
+    height: 40.4px;
+    line-height: 40.4px;
+    color: $sub;
+    background-color: $main;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    @include mq(pc) {
+        padding-right: 1.04vw;
+        padding-left: 1.04vw;
+        line-height: 3.33vw;
+        height: 3.33vw;
+    }
+    @include mq() {
+        height: 32px;
+        line-height: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @include fz_vw-sp(18);
+    }
+}

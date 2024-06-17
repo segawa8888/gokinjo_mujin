@@ -1,0 +1,57 @@
+.p-footer {
+    padding: 95px 0 64px;
+    font-size: 15px;
+    color: $sub;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq(pc) {
+        padding: 7.81vw 0 5.31vw;
+        @include fz_vw(24);
+    }
+    @include mq() {
+        @include fz_vw-sp(10);
+    }
+    a {
+        color: $sub;
+    }
+    background-color: $text;
+    &__content {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__bottom {
+        margin-top: 10.05vw;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mq(tb) {
+            flex-direction: column;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__link {
+        padding: 0 20px;
+        border-right: 1px solid $sub;
+        &:last-child {
+            border: none;
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @include mq(tb) {
+            margin-top: 5vw;
+            @include fz_vw-sp(10);
+            padding: 0 5vw;
+        }
+    }
+}

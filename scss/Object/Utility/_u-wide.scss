@@ -1,0 +1,6 @@
+.u-wide {
+    width: 198px;
+    @include mq(md) {
+        width: 100%;
+    }
+}

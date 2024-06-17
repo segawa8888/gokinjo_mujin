@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    &::before,
+    &::after {
+        box-sizing: border-box;
+        display: inline-block;
+    }
+}
+html {
+    font-size: 62.5%;
+    font-family: $font-base;
+}
+body {
+    background-color: $base;
+    color: $text;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height: 1.36;
+    letter-spacing: 0;
+    margin: 0 auto;
+    @include mq(pc) {
+        @include fz_vw(40);
+    }
+    @include mq() {
+        @include fz_vw-sp(16);
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: $base;
+}
+
+.u-mobile {
+    @include mq(tb) {
+        display: block;
+    }
+    display: none;
+}
+
+.u-desktop {
+    @include mq(tb) {
+        display: none;
+    }
+        display: block;
+}

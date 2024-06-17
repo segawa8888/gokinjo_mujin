@@ -1,0 +1,9 @@
+.l-media {
+    background-color: $beige2;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    @include mq(tb) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

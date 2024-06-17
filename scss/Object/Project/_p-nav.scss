@@ -1,0 +1,21 @@
+.p-nav {
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 40px;
+        font-size: 18px;
+        @include mq(pc) {
+            @include fz_vw(28);
+            margin-right: 3.33vw;
+        }
+        a {
+            color: $text;
+        }
+    }
+    @include mq() {
+        display: none;
+    }
+}
